@@ -1,0 +1,23 @@
+﻿@page
+@model WeatherApp.Pages.Weather.WeatherCallModel
+@{
+    ViewData["Title"] = "Weather";
+}
+
+<h1>Weather</h1>
+
+<a asp-page="WeatherCall" asp-page-handler="Download" class="btn btn-primary">Download Data</a>
+
+@if (Model.RequestContent != null)
+{
+	foreach (var w in Model.WeatherModel.weather)
+	{
+		@w.id
+		<br/>
+		@w.description
+		<br/>
+		@w.main
+	}
+}
+
+

@@ -3539,11 +3539,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kuba\\Desktop\\WeatherApp_old\\WeatherApp.Data\\WeatherApp.Data.csproj",
+      "projectUniqueName": "C:\\Users\\Kuba\\Desktop\\WeatherApp_best\\WeatherApp.Data\\WeatherApp.Data.csproj",
       "projectName": "WeatherApp.Data",
-      "projectPath": "C:\\Users\\Kuba\\Desktop\\WeatherApp_old\\WeatherApp.Data\\WeatherApp.Data.csproj",
+      "projectPath": "C:\\Users\\Kuba\\Desktop\\WeatherApp_best\\WeatherApp.Data\\WeatherApp.Data.csproj",
       "packagesPath": "C:\\Users\\Kuba\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kuba\\Desktop\\WeatherApp_old\\WeatherApp.Data\\obj\\",
+      "outputPath": "C:\\Users\\Kuba\\Desktop\\WeatherApp_best\\WeatherApp.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3562,8 +3562,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Kuba\\Desktop\\WeatherApp_old\\WeatherApp.Core\\WeatherApp.Core.csproj": {
-              "projectPath": "C:\\Users\\Kuba\\Desktop\\WeatherApp_old\\WeatherApp.Core\\WeatherApp.Core.csproj"
+            "C:\\Users\\Kuba\\Desktop\\WeatherApp_best\\WeatherApp.Core\\WeatherApp.Core.csproj": {
+              "projectPath": "C:\\Users\\Kuba\\Desktop\\WeatherApp_best\\WeatherApp.Core\\WeatherApp.Core.csproj"
             }
           }
         }

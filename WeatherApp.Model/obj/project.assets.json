@@ -732,11 +732,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kuba\\Desktop\\WeatherApp_old\\WeatherApp.Model\\WeatherApp.Model.csproj",
+      "projectUniqueName": "C:\\Users\\Kuba\\Desktop\\WeatherApp_best\\WeatherApp.Model\\WeatherApp.Model.csproj",
       "projectName": "WeatherApp.Model",
-      "projectPath": "C:\\Users\\Kuba\\Desktop\\WeatherApp_old\\WeatherApp.Model\\WeatherApp.Model.csproj",
+      "projectPath": "C:\\Users\\Kuba\\Desktop\\WeatherApp_best\\WeatherApp.Model\\WeatherApp.Model.csproj",
       "packagesPath": "C:\\Users\\Kuba\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kuba\\Desktop\\WeatherApp_old\\WeatherApp.Model\\obj\\",
+      "outputPath": "C:\\Users\\Kuba\\Desktop\\WeatherApp_best\\WeatherApp.Model\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

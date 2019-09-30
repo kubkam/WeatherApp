@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kuba\\Desktop\\WeatherApp_old\\WeatherApp.Core\\WeatherApp.Core.csproj",
+      "projectUniqueName": "C:\\Users\\Kuba\\Desktop\\WeatherApp_best\\WeatherApp.Core\\WeatherApp.Core.csproj",
       "projectName": "WeatherApp.Core",
-      "projectPath": "C:\\Users\\Kuba\\Desktop\\WeatherApp_old\\WeatherApp.Core\\WeatherApp.Core.csproj",
+      "projectPath": "C:\\Users\\Kuba\\Desktop\\WeatherApp_best\\WeatherApp.Core\\WeatherApp.Core.csproj",
       "packagesPath": "C:\\Users\\Kuba\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kuba\\Desktop\\WeatherApp_old\\WeatherApp.Core\\obj\\",
+      "outputPath": "C:\\Users\\Kuba\\Desktop\\WeatherApp_best\\WeatherApp.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -19,10 +19,4 @@
     <ProjectReference Include="..\WeatherApp.Model\WeatherApp.Model.csproj" />
   </ItemGroup>
 
-
-  <ItemGroup>
-    <Folder Include="Pages\Forecast\" />
-    <Folder Include="Pages\UvIndex\" />
-  </ItemGroup>
-
 </Project>
