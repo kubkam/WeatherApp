@@ -1,5 +1,4 @@
 # WeatherApp
-=================
 
 Web application which is using Web API from [OpenWeatherMap](https://openweathermap.org/). I am using free subscription which contains:
 - Current weather
