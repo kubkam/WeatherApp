@@ -37,7 +37,7 @@ namespace WeatherApp.Pages.Forecast
         {
             var apiKey = _configuration.GetSection("ApiKey").Value;
 
-            string url = "https://api.openweathermap.org/data/2.5/forecast?q=Warsaw,PL&units=metric&lang=pl";
+            string url = "https://api.openweathermap.org/data/2.5/forecast?q=Warsaw,PL&units=metric";
 
             var uriBuilder = new UriBuilder(url);
             var query = HttpUtility.ParseQueryString(uriBuilder.Query);

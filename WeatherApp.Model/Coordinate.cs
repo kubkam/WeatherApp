@@ -1,8 +1,8 @@
-﻿namespace WeatherApp.Model.WeatherModel
+﻿namespace WeatherApp.Model
 {
     public class Coordinate
     {
-        public decimal lan { get; set; }
+        public decimal lon { get; set; }
         public decimal lat { get; set; }
     }
 }

@@ -4,6 +4,8 @@ namespace WeatherApp.Model.ForecastModel
 {
     public class Forecast
     {
+        public double dt { get; set; }
+
         public MainForecast main { get; set; }
 
         public List<Weather> weather { get; set; }
