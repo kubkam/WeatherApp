@@ -10,7 +10,8 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "2.2.6",
           "Newtonsoft.Json": "12.0.2",
-          "WeatherApp.Core": "1.0.0"
+          "WeatherApp.Core": "1.0.0",
+          "WeatherApp.Model": "1.0.0"
         },
         "runtime": {
           "WeatherApp.Data.dll": {}
@@ -514,6 +515,14 @@
         "runtime": {
           "WeatherApp.Core.dll": {}
         }
+      },
+      "WeatherApp.Model/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.2"
+        },
+        "runtime": {
+          "WeatherApp.Model.dll": {}
+        }
       }
     }
   },
@@ -902,6 +911,11 @@
       "hashPath": "system.threading.tasks.4.0.11.nupkg.sha512"
     },
     "WeatherApp.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WeatherApp.Model/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -925,6 +925,19 @@
         "runtime": {
           "bin/placeholder/WeatherApp.Core.dll": {}
         }
+      },
+      "WeatherApp.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.2"
+        },
+        "compile": {
+          "bin/placeholder/WeatherApp.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WeatherApp.Model.dll": {}
+        }
       }
     }
   },
@@ -3522,6 +3535,11 @@
       "type": "project",
       "path": "../WeatherApp.Core/WeatherApp.Core.csproj",
       "msbuildProject": "../WeatherApp.Core/WeatherApp.Core.csproj"
+    },
+    "WeatherApp.Model/1.0.0": {
+      "type": "project",
+      "path": "../WeatherApp.Model/WeatherApp.Model.csproj",
+      "msbuildProject": "../WeatherApp.Model/WeatherApp.Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3529,7 +3547,8 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.2.6",
       "Microsoft.NETCore.App >= 2.2.0",
       "Newtonsoft.Json >= 12.0.2",
-      "WeatherApp.Core >= 1.0.0"
+      "WeatherApp.Core >= 1.0.0",
+      "WeatherApp.Model >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3564,6 +3583,9 @@
           "projectReferences": {
             "C:\\Users\\Kuba\\Desktop\\WeatherApp_best\\WeatherApp.Core\\WeatherApp.Core.csproj": {
               "projectPath": "C:\\Users\\Kuba\\Desktop\\WeatherApp_best\\WeatherApp.Core\\WeatherApp.Core.csproj"
+            },
+            "C:\\Users\\Kuba\\Desktop\\WeatherApp_best\\WeatherApp.Model\\WeatherApp.Model.csproj": {
+              "projectPath": "C:\\Users\\Kuba\\Desktop\\WeatherApp_best\\WeatherApp.Model\\WeatherApp.Model.csproj"
             }
           }
         }
