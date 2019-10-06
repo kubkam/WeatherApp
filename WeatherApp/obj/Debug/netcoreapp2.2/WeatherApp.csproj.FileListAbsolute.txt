@@ -113,3 +113,4 @@ C:\Users\Kuba\Desktop\WeatherApp_best\WeatherApp\obj\Debug\netcoreapp2.2\Razor\P
 C:\Users\Kuba\Desktop\WeatherApp_best\WeatherApp\obj\Debug\netcoreapp2.2\Razor\Pages\UvIndex\UvIndexCall.g.cshtml.cs
 C:\Users\Kuba\Desktop\WeatherApp_best\WeatherApp\obj\Debug\netcoreapp2.2\Razor\Pages\Forecast\ForecastCall.g.cshtml.cs
 C:\Users\Kuba\Desktop\WeatherApp_best\WeatherApp\obj\Debug\netcoreapp2.2\Razor\Pages\Weather\Details.g.cshtml.cs
+C:\Users\Kuba\Desktop\WeatherApp_best\WeatherApp\obj\Debug\netcoreapp2.2\Razor\Pages\Forecast\Details.g.cshtml.cs

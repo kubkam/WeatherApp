@@ -1,66 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Threading.Tasks;
-using System.Web;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.Extensions.Configuration;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using WeatherApp.Model.ForecastModel;
+using WeatherApp.Data;
 
 namespace WeatherApp.Pages.Forecast
 {
     public class ForecastCallModel : PageModel
     {
-        private readonly IHttpClientFactory _clientFactory;
-        private readonly IConfiguration _configuration;
+        private readonly IWeatherData _weatherData;
+        public IEnumerable<Core.City> Cities { get; set; }
 
-        public ForecastModel ForecastModel { get; set; }
+        [BindProperty(SupportsGet = true)]
+        public string SearchTerm { get; set; } = "Warsaw";
 
-        public string RequestContent { get; set; }
-
-        public ForecastCallModel(IHttpClientFactory clientFactory, IConfiguration configuration)
+        public ForecastCallModel(IWeatherData weatherData)
         {
-            _clientFactory = clientFactory;
-            _configuration = configuration;
+            _weatherData = weatherData;
         }
 
         public void OnGet()
         {
-
-        }
-
-        public async Task OnGetDownload()
-        {
-            var apiKey = _configuration.GetSection("ApiKey").Value;
-
-            string url = "https://api.openweathermap.org/data/2.5/forecast?q=Warsaw,PL&units=metric";
-
-            var uriBuilder = new UriBuilder(url);
-            var query = HttpUtility.ParseQueryString(uriBuilder.Query);
-            query["APPID"] = apiKey;
-            uriBuilder.Query = query.ToString();
-            url = uriBuilder.ToString();
-
-            var client = _clientFactory.CreateClient();
-            var response = await client.GetAsync(new Uri(url));
-
-            if (response.IsSuccessStatusCode)
-            {
-                RequestContent = await response.Content.ReadAsStringAsync();
-
-                JObject requestObject = JObject.Parse(RequestContent);
-                var value = requestObject.ToString(Formatting.None);
-
-                ForecastModel = JsonConvert.DeserializeObject<ForecastModel>(value);
-            }
-            else
-            {
-                Response.Redirect("../Shared/NotFound");
-            }
+            if (SearchTerm.Length >= 3)
+                Cities = _weatherData.GetWeathersByCity(SearchTerm);
         }
     }
 }
