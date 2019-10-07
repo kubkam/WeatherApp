@@ -14,7 +14,7 @@
 		<li>Coordinates: [@Model.WeatherModel.coord.lat, @Model.WeatherModel.coord.lon]</li>
 		<li>@Weather.UnixTimeStampToDateTime(Model.WeatherModel.dt)</li>
 	</ul>
-	<table class="table table-striped table-bordered">
+	<table id="model" class="table table-striped table-bordered display" style="width:100%">
 		<thead>
 			<tr>
 				<th>Temperature</th>
@@ -32,4 +32,31 @@
 			</tr>
 		</tbody>
 	</table>
+}
+
+@section Scripts
+	{
+	<environment include="Development">
+		<script src="~/lib/datatables/js/jquery.dataTables.js"></script>
+		<script src="~/lib/datatables/js/dataTables.bootstrap4.js"></script>
+		<link href="~/lib/datatables/css/dataTables.bootstrap4.css" rel="stylesheet" />
+	</environment>
+	<environment exclude="Development">
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/w/bs4/dt-1.10.18/datatables.min.css" />
+		<script type="text/javascript" src="https://cdn.datatables.net/w/bs4/dt-1.10.18/datatables.min.js"></script>
+	</environment>
+
+	<script>
+		$(document).ready(function () {
+			$('#model').DataTable({
+				"processing": true,
+				"searching": false,
+				"scrollX": true,
+				"paging": false,
+				"info": false,
+				"ordering": false
+			});
+		}
+		);
+	</script>
 }

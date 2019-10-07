@@ -2,7 +2,7 @@
 @using WeatherApp.Model
 @model WeatherApp.Pages.Forecast.DetailsModel
 @{
-    ViewData["Title"] = "Details";
+	ViewData["Title"] = "Details";
 }
 
 <h1>Details</h1>
@@ -16,31 +16,56 @@
 		<li><b>Sunset:</b> @Weather.UnixTimeStampToDateTime(Model.ForecastModel.city.sunset)</li>
 		<li><b>Time right now:</b> @Model.DateTimeNow</li>
 	</ul>
-	<table class="table table-striped table-bordered">
+	<table id="model" class="table table-striped table-bordered display" style="width: 100%">
 		<thead>
-		<tr>
-			<th>Day & time</th>
-			<th>Temperature</th>
-			<th>Humidity</th>
-			<th>Pressure</th>
-			<th>Description</th>
-		</tr>
+			<tr>
+				<th>Day & time</th>
+				<th>Temperature</th>
+				<th>Humidity</th>
+				<th>Pressure</th>
+				<th>Description</th>
+			</tr>
 		</thead>
 		<tbody>
-		@foreach (var l in Model.ForecastModel.list)
-		{
-			<tr>
-				<td>
-					@Weather.UnixTimeStampToDateTime(l.dt).DayOfWeek
-					@Weather.UnixTimeStampToDateTime(l.dt).Day/@Weather.UnixTimeStampToDateTime(l.dt).Month
-					@Weather.UnixTimeStampToDateTime(l.dt).Hour:00
-				</td>
-				<td>@l.main.temp &#8451;</td>
-				<td>@l.main.humidity %</td>
-				<td>@l.main.pressure hPa</td>
-				<td>@l.weather[0].description</td>
-			</tr>
-		}
+			@foreach (var l in Model.ForecastModel.list)
+			{
+				<tr>
+					<td>
+						@Weather.UnixTimeStampToDateTime(l.dt).DayOfWeek
+						@Weather.UnixTimeStampToDateTime(l.dt).Day/@Weather.UnixTimeStampToDateTime(l.dt).Month
+						@Weather.UnixTimeStampToDateTime(l.dt).Hour:00
+					</td>
+					<td>@l.main.temp &#8451;</td>
+					<td>@l.main.humidity %</td>
+					<td>@l.main.pressure hPa</td>
+					<td>@l.weather[0].description</td>
+				</tr>
+			}
 		</tbody>
 	</table>
+}
+
+@section Scripts
+	{
+	<environment include="Development">
+		<script src="~/lib/datatables/js/jquery.dataTables.js"></script>
+		<script src="~/lib/datatables/js/dataTables.bootstrap4.js"></script>
+		<link href="~/lib/datatables/css/dataTables.bootstrap4.css" rel="stylesheet" />
+	</environment>
+	<environment exclude="Development">
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/w/bs4/dt-1.10.18/datatables.min.css" />
+		<script type="text/javascript" src="https://cdn.datatables.net/w/bs4/dt-1.10.18/datatables.min.js"></script>
+	</environment>
+
+	<script>
+		$(document).ready(function () {
+			$('#model').DataTable({
+				"processing": true,
+				"searching": false,
+				"scrollX": true,
+				"paging": false
+			});
+		}
+		);
+	</script>
 }
