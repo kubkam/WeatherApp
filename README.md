@@ -7,6 +7,8 @@ Web application which is using Web API from [OpenWeatherMap](https://openweather
 - Weather maps
 - Weather alerts
 
+This web application is with [ASP.NET Core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2 "ASP.NET CORE 2.2") and [EF Core](https://docs.microsoft.com/en-us/ef/core "EF CORE").
+
 This application is still under development.
 
 ## Database
