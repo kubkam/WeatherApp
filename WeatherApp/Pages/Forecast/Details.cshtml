@@ -2,15 +2,15 @@
 @using WeatherApp.Model
 @model WeatherApp.Pages.Forecast.DetailsModel
 @{
-	ViewData["Title"] = "Details";
+	ViewData["Title"] = "Forecast";
 }
 
-<h1>Details</h1>
+<h1>Forecast</h1>
 
 @if (Model.RequestContent != null)
 {
 	<ul class="list-inline">
-		<li><b>Forecast for @Model.ForecastModel.city.name, @Model.ForecastModel.city.country</b></li>
+		<li><b>@Model.ForecastModel.city.name, @Model.ForecastModel.city.country</b></li>
 		<li><b>Coordinates:</b> [@Model.ForecastModel.city.coord.lat, @Model.ForecastModel.city.coord.lon]</li>
 		<li><b>Sunrise:</b> @Weather.UnixTimeStampToDateTime(Model.ForecastModel.city.sunrise)</li>
 		<li><b>Sunset:</b> @Weather.UnixTimeStampToDateTime(Model.ForecastModel.city.sunset)</li>

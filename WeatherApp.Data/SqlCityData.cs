@@ -20,6 +20,10 @@ namespace WeatherApp.Data
 
         public IEnumerable<Core.City> GetWeathersByCity(string city)
         {
+            foreach (var c in city)
+                if (char.IsDigit(c))
+                    return new List<City>();
+            
             var query = _db.Cities
                 .Include(c => c.coord)
                 .Where(c => string.IsNullOrEmpty(city) || c.name.Contains(city))
