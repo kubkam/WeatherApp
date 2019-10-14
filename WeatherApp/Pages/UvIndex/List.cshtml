@@ -1,9 +1,10 @@
 ﻿@page
-@using WeatherApp.Model
-@model IndexModel
+@model WeatherApp.Pages.UvIndex.ListModel
 @{
-	ViewData["Title"] = "Home page";
+	ViewData["Title"] = "UV Index";
 }
+
+<h1>UV Index</h1>
 
 <form method="get">
 	<div class="form-group">
@@ -18,7 +19,7 @@
 
 @if (Model.SearchTerm == "")
 {
-	<br/>
+	<br />
 	<h4>Welcome. It is weather app where you can find your city and see how is weather there. Use input above to search cities.</h4>
 }
 else if (Model.SearchTerm.Length < 3)
@@ -44,8 +45,8 @@ else
 					<td> @city.country </td>
 					<td>[@city.coord.lat, @city.coord.lon] </td>
 					<td>
-						<a asp-page="./Weather/WeatherDetails" asp-route-cityId="@city.id">Weather</a> |
-						<a asp-page="./Forecast/ForecastDetails" asp-route-cityId=@city.id>Forecast</a> 
+						<a asp-page="./CurrentUv" asp-route-lat=@city.coord.lat asp-route-lon=@city.coord.lon>Current UV Index</a> |
+						<a asp-page="./ForecastUv" asp-route-lat=@city.coord.lat asp-route-lon=@city.coord.lon>Forecast UV Index</a>
 					</td>
 
 				</tr>

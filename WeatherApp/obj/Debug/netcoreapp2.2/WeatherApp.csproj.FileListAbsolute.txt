@@ -109,5 +109,8 @@ C:\Users\Kuba\Desktop\WeatherApp_best\WeatherApp\obj\Debug\netcoreapp2.2\Weather
 C:\Users\Kuba\Desktop\WeatherApp_best\WeatherApp\obj\Debug\netcoreapp2.2\WeatherApp.csproj.CopyComplete
 C:\Users\Kuba\Desktop\WeatherApp_best\WeatherApp\obj\Debug\netcoreapp2.2\WeatherApp.dll
 C:\Users\Kuba\Desktop\WeatherApp_best\WeatherApp\obj\Debug\netcoreapp2.2\WeatherApp.pdb
-C:\Users\Kuba\Desktop\WeatherApp_best\WeatherApp\obj\Debug\netcoreapp2.2\Razor\Pages\Weather\Details.g.cshtml.cs
-C:\Users\Kuba\Desktop\WeatherApp_best\WeatherApp\obj\Debug\netcoreapp2.2\Razor\Pages\Forecast\Details.g.cshtml.cs
+C:\Users\Kuba\Desktop\WeatherApp_best\WeatherApp\obj\Debug\netcoreapp2.2\Razor\Pages\UvIndex\List.g.cshtml.cs
+C:\Users\Kuba\Desktop\WeatherApp_best\WeatherApp\obj\Debug\netcoreapp2.2\Razor\Pages\UvIndex\CurrentUv.g.cshtml.cs
+C:\Users\Kuba\Desktop\WeatherApp_best\WeatherApp\obj\Debug\netcoreapp2.2\Razor\Pages\UvIndex\ForecastUv.g.cshtml.cs
+C:\Users\Kuba\Desktop\WeatherApp_best\WeatherApp\obj\Debug\netcoreapp2.2\Razor\Pages\Forecast\ForecastDetails.g.cshtml.cs
+C:\Users\Kuba\Desktop\WeatherApp_best\WeatherApp\obj\Debug\netcoreapp2.2\Razor\Pages\Weather\WeatherDetails.g.cshtml.cs
